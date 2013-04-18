@@ -199,8 +199,12 @@ $this->fontdata = array(
 		'unAGlyphs' => true,
 		),
 
-
-
+    "wqy-zenhei" => array(
+        'R' => "wqy-zenhei.ttc",
+        'TTCfontID' => array(
+            'R' => 1
+        )
+    ),
 
 /* Examples of some CJK fonts */
 /*

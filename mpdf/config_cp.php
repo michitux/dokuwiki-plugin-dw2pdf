@@ -95,9 +95,9 @@ function GetLangOpts($llcc, $adobeCJK) {
 			$unifonts = "sjis,sjisB,sjisI,sjisBI";
 		}
 /* Uncomment these lines if CJK fonts available */
-//		else {
-//			$unifonts = "sun-exta,sun-extb,hannoma,hannomb";
-//		}
+		else {
+			$unifonts = "wqy-zenhei";
+		}
 		break;
 
 	  CASE "ko":  
@@ -116,27 +116,27 @@ function GetLangOpts($llcc, $adobeCJK) {
 				$unifonts = "big5,big5B,big5I,big5BI"; 
 			}
 /* Uncomment these lines if CJK fonts available */
-//			else {
-//				$unifonts = "sun-exta,sun-extb,hannoma,hannomb";
-//			}
+			else {
+				$unifonts = "wqy-zenhei";
+			}
 		}
 		else if ($country == "CN") { 
 			if ($adobeCJK) {
 				$unifonts = "gb,gbB,gbI,gbBI";  
 			}
 /* Uncomment these lines if CJK fonts available */
-//			else {
-//				$unifonts = "sun-exta,sun-extb,hannoma,hannomb";
-//			}
+			else {
+				$unifonts = "wqy-zenhei";
+			}
 		}
 	  	else { 
 			if ($adobeCJK) {
 				$unifonts = "gb,gbB,gbI,gbBI"; 
 			}
 /* Uncomment these lines if CJK fonts available */
-//			else {
-//				$unifonts = "sun-exta,sun-extb,hannoma,hannomb";
-//			}
+			else {
+				$unifonts = "wqy-zenhei";
+			}
 		}
 		break;
 

@@ -98,7 +98,7 @@ class action_plugin_dw2pdf extends DokuWiki_Action_Plugin {
             $template = $this->load_template($title);
 
             // prepare HTML header styles
-            $html  = '<html><head>';
+            $html  = '<html lang="'.$conf['lang'].'"><head>';
             $html .= '<style>';
             $html .= $this->load_css();
             $html .= '@page { size:auto; '.$template['page'].'}';
@@ -107,7 +107,7 @@ class action_plugin_dw2pdf extends DokuWiki_Action_Plugin {
             $html .= '</style>';
             $html .= '</head><body>';
             $html .= $template['html'];
-            $html .= '<div class="dokuwiki">';
+            $html .= '<div class="dokuwiki lang-'.$conf['lang'].'">';
 
             // loop over all pages
             $cnt = count($list);
